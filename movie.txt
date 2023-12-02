@@ -1,0 +1,68 @@
+Database : Movie
+
+1. Movie should have multiple media(Video or Image) 
+2. Movie can belongs to multiple Genre 
+3. Movie can have multiple reviews and Review can belongs to a user 
+4. Artist can have multiple skills 
+5. Artist can perform multiple role in a single film
+
+List of tables :
+ 
+      - Title
+      - Genre
+      - Media
+      - Review
+      - User
+      - Artist
+      - Skills
+      - Role
+
+Relationships :
+
+      - Title and Gnere : many-to-many
+      - Title and Media : many-to-many
+      - Title and Review : one-to-many
+      - Review and User : one-to-many
+      - Artist and Skills : many-to-many
+      - Artist and Role : one-to-many
+      
+
+List of tables and columns :
+
+      1.Title
+         - titleID
+         - name
+
+      2.Genre
+         - genereID
+         - name
+
+      3.Media
+        - mediaID
+        - mediaType
+
+      4.Review
+        - reviewID
+        - stars ratings
+        - commends
+
+      5 User
+        - userID
+        - name
+        - mailId
+        - mobile.no
+
+      6.Artist
+        - ArtistID
+        - name
+        - mother language
+        - experience
+
+      7.Skills
+        - skillsID
+        - type of skill
+
+      8.Role   
+        - roleId
+        - name
+        - type of role
